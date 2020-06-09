@@ -1,4 +1,4 @@
-# Lizardmen Zettelkasen for[Obsidian.md](https://obsidian.md/)
+# Lizardmen Zettelkasen for [Obsidian.md](https://obsidian.md/)
 An [Obsidian](https://obsidian.md/) CSS light/dark Theme geared towards Zettelkasten (compatible with v. 6.7)
 
 
