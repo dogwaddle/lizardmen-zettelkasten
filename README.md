@@ -2,9 +2,17 @@
 An [Obsidian](https://obsidian.md/) CSS light/dark Theme geared towards Zettelkasten (compatible with v. 6.7)
 
 
-![screenshot 1](./ObsidianOne.png)
+![screenshot 1](./DarkOne.png)
 
-![Screenshot 2](./ObsidianTwo.png)
+![Screenshot 2](./DarkTwo.png)
+
+![screenshot 3](./DarkThree.png)
+
+![Screenshot 4](./LightOne.png)
+
+![screenshot 5](./LightTwo.png)
+
+![Screenshot 6](./LightThree.png)
 
 ## Install
 
