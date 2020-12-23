@@ -1313,3 +1313,10 @@ blockquote:hover {
 .popover hr {
   display: block !important;
 }
+
+/* adjusting colors for file explorer file selector and selection */
+
+.nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
+    background-color: #337AB7 !important;
+    color: white !important;
+}
