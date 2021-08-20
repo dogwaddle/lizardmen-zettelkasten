@@ -5,13 +5,17 @@ Howdy all, maintenance update. I've been mantaining the light version only of th
 I've also uploaded an alternative version that I recently adopted in the past two weeks that features muted links (linked notes are only underlined) because that makes readability easier for me personally. Hope you enjoy!
 
 # Lizardmen Zettelkasen for [Obsidian.md](https://obsidian.md/)
-An [Obsidian](https://obsidian.md/) CSS light/dark Theme geared towards Zettelkasten (compatible with v. 0.12.10)
+An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten (compatible with v. 0.12.10)
 
 ![screenshot main](./screenshot.png)
 
 ![screenshot 5](./LightTwo.png)
 
 ![Screenshot 6](./LightThree.png)
+
+## Alternative Version of Theme (My Preferred Muted Version)
+
+![screenshot alt](./screenshotAlt.png)
 
 ## Dark Version hasn't been Maintained
 
