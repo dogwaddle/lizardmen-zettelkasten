@@ -15,6 +15,8 @@ An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten 
 
 ## Alternative Version of Theme (My Preferred Muted Version)
 
+Difference with this one is that the links aren't blue and instead just underlined. In addition to that, hovered internal links are red now, while external hovered links are blue. 
+
 ![screenshot alt](./screenshotAlt.png)
 
 ## Dark Version hasn't been Maintained
