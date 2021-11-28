@@ -491,7 +491,7 @@ background-color: #080808;
 
 .theme-light .search-result:hover, .theme-light .search-result-file-title:hover {
  background-color: #182026 !important;
- color: #F2CA52; !important;
+ color: #F2CA52 !important;
 }
 
 .theme-dark .search-result:hover, .theme-dark .search-result-file-title:hover {
