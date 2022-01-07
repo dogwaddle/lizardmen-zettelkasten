@@ -207,6 +207,8 @@ background-color: #182026;
 /* color: #8A9BA8; */
 /* text that matches search in files */
 
+
+
 .theme-light .obsidian-search-match-highlight {
    background-color: #E1E8ED;
    color: #5C7080;
@@ -316,9 +318,10 @@ ul li {
 .theme-light .markdown-preview-view mark, .theme-light .cm-s-obsidian span.cm-formatting-highlight, .theme-light .cm-s-obsidian span.cm-highlight {
    color: #10161A;
    background-color: #FEEBc8 !important;
-   padding-left: 5px;
-   padding-right: 5px;
+   padding-right: 2px !important;
+   padding-left: 2px !important;
 }
+
 
 .theme-dark .markdown-preview-view mark, .theme-dark .cm-s-obsidian span.cm-formatting-highlight, .theme-dark .cm-s-obsidian span.cm-highlight {
    color: #10161A;
@@ -602,64 +605,13 @@ padding-right: 5px;
 }
 
 
-/* Adjusting Popovers */
-
-.popover .footnotes {
- display: none;
-}
-
-.popover hr {
-  display: block !important;
-}
-
-/* .popover hr {
-display: none;
-} */
-
-.theme-light .popover {
- font-size: 16px;
- box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.25);
- padding-top: 10px !important;
- padding-left: 5px !important;
- padding-right: 5px !important;
-}
-
-.theme-dark .popover {
- font-size: 16px;
- box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.25);
-}
-
-.theme-light .popover mark {
- background-color: #FEEBC8;
- padding-left: 3px;
- padding-right: 3px;
-}
-
-.theme-dark .popover mark {
- color: #10161A;
- background-color: #FEEBC8;
- padding-left: 3px;
- padding-right: 3px;
-}
-
-
-.theme-dark .popover .markdown-embed h4 {
- color: #fdd755;
- background-color: #0f1419 !important;
-}
-
-.theme-light .popover .markdown-embed h4 {
- font-size: 14px;
- color: #A32121;
-}
-
-
 /*---------------  EMBEDS  ----------------------*/
 
 /* Naked Embeds */
+/*
 .markdown-embed-title {
  display:none !important;
-}
+}*/
 
 .theme-light .markdown-preview-view .markdown-embed {
 /*  border: 1px solid #F5F8FA; */
@@ -735,6 +687,7 @@ color: #A82A2A !important;
  display: none !important;
 }
 
+
  .markdown-embed h2, .markdown-embed h1 {
  display:none !important;
 }
@@ -744,10 +697,6 @@ color: #A82A2A !important;
 }
 
 .markdown-preview-view .file-embed {
-display: none !important;
-}
-
-.popover .file-embed {
 display: none !important;
 }
 
@@ -883,213 +832,6 @@ ul li {
    margin: 0 0 5px 0;
    margin-bottom: 2px !important;
    margin-top: 2px !important;
-}
-
-/* Andy Matuschak mode! V2! for 0.7.0! (so... 2.7?) */
-
-/* everything under .mod-root now. Don't want Andy messing with sidebars */
-/* also, Andy only makes sense for vertical splits, at the root level, right? */
-
-.mod-root.workspace-split.mod-vertical {
- overflow-x:auto;
- --header-width: 45px; /* <- 36px is the header height in the default theme 36px */
-}
-
-.theme-light .mod-root.workspace-split.mod-vertical > div {
- min-width: calc(700px + var(--header-width)); /* <-- 700px is the default theme's "readable" max-width */
- box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.25);
- position:sticky;
- left: 0;
-}
-
-.theme-dark .mod-root.workspace-split.mod-vertical > div {
- min-width: calc(700px + var(--header-width)); /* <-- 700px is the default theme's "readable" max-width */
- box-shadow: 0px 0px 40px 10px rgba(197, 197, 197, 0.25);
- position:sticky;
- left:0;
-}
-
-.theme-dark .workspace-leaf-resize-handle {
-   width: 0.5px !important;
-   background-color: rgba(197, 197, 197, 0.25);
-
- }
-
-/* shift sticky position, so titles will stack up to the left */
-/* This will currently stack to a maximum of 10 before resetting */
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) { left: calc(var(--header-width) * 0); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) { left: calc(var(--header-width) * 1); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) { left: calc(var(--header-width) * 2); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) { left: calc(var(--header-width) * 3); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) { left: calc(var(--header-width) * 4); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) { left: calc(var(--header-width) * 5); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) { left: calc(var(--header-width) * 6); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) { left: calc(var(--header-width) * 7); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n+0) { left: calc(var(--header-width) * 8); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n+1) { left: calc(var(--header-width) * 9); }
-
-/* now it's time for the fancy vertical titles */
-
-/* first we'll add a bit of gap for the title to sit inside of */
-.workspace-leaf-content {
- padding-left: var(--header-width);
- padding-right: 10px;
- position: relative;
-}
-
-/* this is where the magic happens */
-.theme-light .view-header {
- writing-mode: vertical-lr;
- border-right: 1px solid var(--background-secondary-alt);
-/*  border-left: 2px solid #CED9E0; #CED9E0*/
- border-top: none;
- border-bottom: none;
- height: auto;
- width: var(--header-width);
- position: absolute;
- left:0;
- top:0;
- bottom:0;
-}
-
-.theme-dark .view-header {
- writing-mode: vertical-lr;
- border-left: 1px solid rgba(197, 197, 197, 0.25);
- border-top: none;
- border-bottom: none;
- height: auto;
- width: var(--header-width);
- position: absolute;
- left:0;
- top:0;
- bottom:0;
-}
-
-/* active titles have different border colours */
-.theme-light .workspace-leaf.mod-active .view-header {
- border-right: 2px solid #106BA3 !important;
- border-bottom: none;
-}
-
-.theme-dark .workspace-leaf.mod-active .view-header {
- background-color: #0f1419;
- border-bottom: none;
-}
-
-/* unset the title container height and swap padding */
-.view-header-title-container {
- height: unset;
- padding-left: none;
- padding-top: 10px;
-}
-
-/* fix the long-title-obscuring shadows */
-.theme-dark .view-header-title-container:after {
- width: 100%;
- height: 30px;
- top:unset;
- bottom: 0;
- background: linear-gradient(to bottom, transparent, #0f1419);
-}
-
-.theme-light .view-header-title-container:after {
- width: 100%;
- height: 30px;
- top:unset;
- bottom: 0;
- background: linear-gradient(to bottom, transparent, var(--background-secondary));
-}
-
-.theme-light .workspace-leaf.mod-active .view-header-title-container:after {
-   background: linear-gradient(to bottom, transparent, var(--background-primary-alt));
-}
-
-.theme-dark .workspace-leaf.mod-active .view-header-title-container:after {
-   background: linear-gradient(to bottom, transparent, #0f1419) !important;
-}
-
-/* swap the padding/margin around for the header and actions icons */
-.theme-dark .view-header-icon, .theme-dark .view-actions {
- background-color: #0f1419;
- padding: 10px 5px;
-}
-
-.view-header-icon, .view-actions {
- padding: 5px 10px;
-}
-
-.view-action {
- margin: 8px 0;
-}
-
-.theme-dark .view-actions a:hover {
- color: #A82A2A !important;
-}
-
-.theme-dark .menu-item:hover {
- color: white;
- background-color: #8A9BA8;
-}
-
-
-/* get rid of the gap left by the now-missing horizontal title */
-.view-content {
- height: 100%;
-}
-
-.theme-light .workspace-leaf.mod-active .view-header-title {
-   font-size: 22px;
-   color: #A32121 !important;
-}
-
-.theme-dark .workspace-leaf.mod-active .view-header-title {
-   font-size: 22px;
-   color: #A82A2A !important;
-}
-
-/* Note Headers that aren't active */
-.theme-light .view-header-title {
- font-size: 22px;
- color: rgba(35,43,61);
-}
-
-.theme-dark .view-header-title {
- font-size: 22px;
- color: #686B6E !important; /* light grey #8A9BA8 */
- background-color: #0f1419 !important;
-}
-
-/* make the fake drop target overlay have a background so you can see it. */
-/* TODO: figure out how the fake target overlay works so we can put the title back, too */
-.workspace-fake-target-overlay {
- background-color: var(--background-primary);
-}
-
-.mod-root.workspace-split.mod-vertical {
-   overflow-x: auto;
-   --header-width: 45px;
-}
-
-
-.theme-light .workspace-ribbon.mod-left.is-collapsed .workspace-ribbon-collapse-btn {
-   margin-top: 20px;
-   cursor: pointer;
-   color: white !important;
-   transform: none;
-   transition: transform 200ms ease-in-out;
-}
-
-.theme-light .workspace-ribbon.mod-left.is-collapsed .workspace-ribbon-collapse-btn:hover {
- color: #F03030;
-}
-
-.theme-dark .workspace-ribbon-collapse-btn {
-   margin-top: 20px;
-   padding: 20px 15px;
-   cursor: pointer;
-   color: var(--text-faint);
-   transform: none;
-   transition: transform 200ms ease-in-out;
 }
 
 
@@ -1310,9 +1052,6 @@ blockquote:hover {
   transform: translateY(-10px);
 }
 
-.popover hr {
-  display: block !important;
-}
 
 .nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
     background-color: #337AB7 !important;
@@ -1339,3 +1078,320 @@ body {
     padding-left: 5px !important;
     padding-right: 10px !important;
   }
+
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5 {
+font-size: 16px !important;
+color: #A32121 !important;
+}
+
+.HyperMD-quote {
+  border: 1px solid var(--background-modifier-border) !important;
+  border-left-color: #337AB7 !important;   /* #2c65a0 !important; */
+  margin-inline-start: 0px !important;
+  border-radius: 0 4px 4px 0 !important;
+  border-left-width: 5px !important;
+  padding: 10px 20px !important;
+  margin-inline-start: 30px !important;
+  margin-inline-end: 30px !important;
+  background-color: white !important;
+}
+
+.markdown-preview-view blockquote {
+  border: 1px solid var(--background-modifier-border) !important;
+  border-left-color: #337AB7 !important;   /* #2c65a0 !important; */
+  margin-inline-start: 0px !important;
+  border-radius: 0 4px 4px 0 !important;
+  border-left-width: 5px !important;
+  padding: 10px 20px !important;
+  margin-inline-end: 30px !important;
+  background-color: white !important;
+}
+
+.cm-s-obsidian span.cm-footref, .cm-s-obsidian span.cm-blockid {
+color: #16693B !important;
+}
+
+a.tag, .cm-s-obsidian span.cm-hashtag {
+  font-weight: normal;
+  font-size:  85% !important;
+  color: #4068c4;
+  font-family: "Hack";
+}
+
+.tag {
+  position: relative;
+  top: -15px;
+  padding-right: 15px;
+}
+
+.cm-s-obsidian .cm-formatting-hashtag {
+  padding-left: 10px !important;
+}
+
+.view-header-title {
+  margin-left: 10px !important;
+  font-size: 14px !important;
+  padding-top: 4px !important;
+  font-weight: 600 !important;
+  color: #888888 !important;
+  background-color: white !important;
+}
+
+.workspace-leaf.mod-active .view-header-title {
+  font-size: 14px !important;
+  padding-top: 4px !important;
+    font-weight: 600 !important;
+  color: black !important;
+  background-color: white !important;
+}
+
+.view-header-title-container:after {
+    background: none !important;
+}
+
+.view-header-icon {
+color: white;
+background-color: white;
+top: 0px;
+}
+
+.view-actions {
+ background-color: white !important;
+}
+
+.view-actions svg {
+  width: 30px;
+  height: 15px;
+}
+
+.view-action {
+  color: #D4D4D4 !important;
+  margin-top: 3px !important;
+}
+
+.nav-action-button svg {
+  width: 25px;
+  height: 15px;
+}
+
+.workspace-ribbon-collapse-btn svg path {
+  stroke-width: 3px;
+}
+.nav-action-button svg path {
+  stroke-width: 2px;
+}
+
+.view-header-title-container {
+background-color: white !important;
+}
+
+.workspace-leaf.mod-active .view-header {
+    background-color: #ececec !important;
+    border-bottom: none;
+}
+
+.view-action {
+    color: #D4D4D4 !important;
+    margin-top: 3px !important;
+}
+
+.view-action {
+    margin: 0 8px;
+    cursor: pointer;
+    color: var(--text-muted);
+    position: relative;
+    top: 3px;
+}
+
+.view-header {
+  border-bottom: none !important;
+}
+
+.side-dock-ribbon {
+    flex: 0 0 50px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.workspace-tabs {
+    background-color: var(--background-secondary-alt);
+    overflow: hidden;
+    padding-right: 4px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.theme-light .view-action {
+  color: #D4D4D4 !important;
+}
+
+.popover.hover-popover {
+  width: 600px !important;
+  padding-left: 30px;
+  padding-right: 15px;
+  height: 100% !important;
+  min-height: 300px;
+}
+
+.popover.hover-popover h1 {
+  display: block !important;
+}
+
+.popover.hover-popover h2 {
+  display: block !important;
+}
+
+.popover.hover-popover hr {
+  display: block !important;
+}
+
+.embedded-backlinks {
+  background-color: #fafafc !important;
+  border-radius: 5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-bottom: 20px !important;
+  min-height: auto !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+padding-bottom: 20px !important;
+}
+
+/* How the results from back pane appear */
+
+.embedded-backlinks .search-result-file-match {
+ background-color: #fafafc !important;
+}
+
+.embedded-backlinks .search-result-file-matched-text {
+ background-color: #fafafc !important;
+}
+
+.embedded-backlinks .search-result-file-title {
+ color: #888888 !important;
+}
+
+.embedded-backlinks .search-result {
+  padding-top: 5px !important;
+}
+
+.embedded-backlinks .nav-action-button.is-active {
+background-color: #337AB7 !important;
+}
+/* When Hovered */
+
+.embedded-backlinks .search-result-container:hover {
+  border: 2px dotted #A32121 !important;
+}
+
+.embedded-backlinks .search-results-children:hover, .embedded-backlinks .search-result:hover {
+  border: none !important;
+}
+
+.embedded-backlinks .search-result-file-title:hover {
+  color: #182026 !important;
+  background-color: #fafafc !important;
+}
+
+.embedded-backlinks .search-result-file-match:hover, .embedded-backlinks .search-result:hover {
+  background-color: #fafafc !important;
+}
+
+.embedded-backlinks .tree-item-flair:hover {
+ background-color: #337AB7 !important;
+ color: white !important;
+}
+
+.embedded-backlinks .tree-item-self:hover .tree-item-flair {
+  background-color: #337AB7 !important;
+  color: white !important;
+}
+
+.embedded-backlinks .search-result-hover-button:hover {
+  background-color: #337AB7 !important;
+  color: white !important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+}
+
+.hider-ribbon .workspace-ribbon.mod-left .side-dock-ribbon-action, .workspace-ribbon.mod-left .side-dock-ribbon-action {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.75px 6px;
+  margin-bottom: 10px;
+}
+
+.workspace-ribbon.mod-right.is-collapsed, .workspace-ribbon.mod-right {
+    flex: 0 0 30px !important;
+}
+
+.titlebar {
+background-color: #182026 !important;
+}
+
+/* .is-mobile .workspace-tabs */
+
+.is-mobile .nav-files-container, .is-mobile .search-result-container, .is-mobile .backlink-pane, .is-mobile .tag-container {
+  padding-top: 10px !important;
+  margin-right: 0px !important;
+  background-color: #182026 !important; /*#182026 */
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+}
+
+/*------ Tablet Settings ---------*/
+
+.is-mobile.is-ios .safe-area-top-cover { /* Top bar of Tablet */
+  background-color: #fafafc !important;
+}
+
+/* ---------- Test Settings --------------- */
+
+/* --- In Console Add app.emulateMobile(true) ---- */
+
+.is-mobile .workspace-drawer-inner {
+color: white !important;
+background-color: #182026 !important; /* #ededec */
+border-bottom-right-radius: 5px !important;
+}
+
+.is-mobile .workspace-drawer.mod-right, .is-mobile .workspace-drawer.mod-left {
+border-left: none !important;
+border-right: none !important;
+}
+
+.is-mobile .side-dock-ribbon {
+background-color: #ededec !important;
+}
+
+/* --------- Fixing interal links ----------------*/
+
+
+ span.cm-highlight span.cm-underline
+{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link.cm-list-1 {
+  padding-left: 0px !important;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved
+{
+  opacity: 1 !important;
+}
+
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
+  color: rgb(43, 149, 214, 0.5) !important;
+}
+
