@@ -12,7 +12,25 @@ For further discussion, see [the post on Obsidian forum](https://forum.obsidian.
 # Lizardmen Zettelkasen for [Obsidian.md](https://obsidian.md/)
 An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten (compatible with v. 0.12.10)
 
-## Screenshots Need Updating
+***
+
+## New Version of the Theme (Jan 2022)
+
+![new screenshot 1](./Screenshot-New-1.png)
+
+![new screenshot 2](.Screenshot-New-2.png)
+
+***
+
+## Muted Version of the Theme
+
+Difference with this one is that the links aren't blue and instead just underlined. In addition to that, hovered internal links are red now, while external hovered links are blue. 
+
+![screenshot alt](./screenshotAlt.png)
+
+***
+
+## Original Theme Screenshots
 
 ![screenshot main](./screenshot.png)
 
@@ -20,11 +38,7 @@ An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten 
 
 ![Screenshot 6](./LightThree.png)
 
-## Alternative Version of Theme (My Preferred Muted Version)
-
-Difference with this one is that the links aren't blue and instead just underlined. In addition to that, hovered internal links are red now, while external hovered links are blue. 
-
-![screenshot alt](./screenshotAlt.png)
+***
 
 ## Dark Version hasn't been Maintained
 
