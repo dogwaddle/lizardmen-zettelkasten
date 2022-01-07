@@ -1,11 +1,18 @@
-## Note to Visitors (8/20/21)
+## Note to Visitors (01/07/2022)
 
-Howdy all, maintenance update. I've been mantaining the light version only of this theme, so I'm not sure how functional the dark version is below. I only fix issues with it as needed for me to work in my own vault because it is the theme that I use on a daily basis. So I apologize if there is something funky about it. I uploaded the latest version from my personal vault. 
+Howdy! I've been using this theme for the past month. In doing so, I've been tweaking it to work slightly different and with the Andy Mode plugin instead of CSS code. 
+* obsidian.css - the current active theme that I'm using and updating
+* obsidianAlt.css - a theme from august of last year that has muted links for easier readability
+* obsidianOriginal.css - the theme that was previously here, in case anyone prefers this
 
-I've also uploaded an alternative version that I recently adopted in the past two weeks that features muted links (linked notes are only underlined) because that makes readability easier for me personally. Hope you enjoy!
+For further discussion, see [the post on Obsidian forum](https://forum.obsidian.md/t/theme-lizardmen-zettelkasten-light-dark/1519).
+
+***
 
 # Lizardmen Zettelkasen for [Obsidian.md](https://obsidian.md/)
 An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten (compatible with v. 0.12.10)
+
+## Screenshots Need Updating
 
 ![screenshot main](./screenshot.png)
 
