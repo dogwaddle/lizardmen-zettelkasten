@@ -12,13 +12,12 @@ For further discussion, see [the post on Obsidian forum](https://forum.obsidian.
 # Lizardmen Zettelkasen for [Obsidian.md](https://obsidian.md/)
 An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten (compatible with v. 0.12.10)
 
-***
 
 ## New Version of the Theme (Jan 2022)
 
 ![new screenshot 1](./Screenshot-New-1.png)
 
-![new screenshot 2](.Screenshot-New-2.png)
+![new screenshot 2](./Screenshot-New-2.png)
 
 ***
 
