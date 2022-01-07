@@ -17,7 +17,7 @@ An [Obsidian](https://obsidian.md/) CSS light Theme geared towards Zettelkasten 
 
 ![new screenshot 1](./Screenshot-New-1.png)
 
-![new screenshot 2](./Screenshot-New-2.png)
+![new screenshot 2](./Screenshot-New-Two.png)
 
 ***
 
