@@ -1,3 +1,9 @@
+## Update (10/23/2022)
+
+If you are using this theme, it is not longer working due to the latest Obsidian update. I'm holding off on fully updating this page with all the screenshots until I'm 100% satisfied with the theme. I was able to recreate the theme to my liking, just have to give it some time to make sure everything is good. Until then I have the theme.css file I'm using uploaded.
+
+***
+
 ## Note to Visitors (01/07/2022)
 
 Howdy! I've been using this theme for the past month. In doing so, I've been tweaking it to work slightly different and with the Andy Mode plugin instead of CSS code. 
